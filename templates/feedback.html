@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Submit Feedback</h1>
+        <form method="POST" action="{{ url_for('feedback') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.resident_id.label(class="form-control-label") }}
+                {{ form.resident_id(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.message.label(class="form-control-label") }}
+                {{ form.message(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+
+        <h2 class="mt-5">Existing Feedback</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Resident</th>
+                    <th>Message</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for feedback in feedbacks %}
+                <tr>
+                    <td>{{ feedback.id }}</td>
+                    <td>{{ feedback.resident.name }}</td>
+                    <td>{{ feedback.message }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

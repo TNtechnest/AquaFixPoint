@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1>Welcome to the Admin Dashboard</h1>
+        <p>This is the home page of the admin dashboard. Use the links below to navigate through the system.</p>
+
+        <div class="list-group">
+            <a href="{{ url_for('login') }}" class="list-group-item list-group-item-action">Login</a>
+
+        </div>
+    </div>
+</body>
+</html>

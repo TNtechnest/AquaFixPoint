@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Operator Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Operator Dashboard</h1>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card text-white bg-info mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Manage Contacts</h5>
+                        <a href="{{ url_for('manage_contacts') }}" class="btn btn-light">Go to Contacts</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-warning mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Call Reports</h5>
+                        <a href="{{ url_for('call_logs') }}" class="btn btn-light">View Call Reports</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-success mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Feedback</h5>
+                        <a href="{{ url_for('feedback') }}" class="btn btn-light">View Feedback</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card text-white bg-primary mb-3">
+                    <div class="card-body">
+                        <h5 class="card-title">Initiate Call</h5>
+                        <a href="{{ url_for('initiate_call') }}" class="btn btn-light">Start Call</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row mt-4">
+            <div class="col-md-12">
+                <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

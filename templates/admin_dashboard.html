@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/index2.css') }}">
+
+    <style>
+        .card-title {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+  	<div class="dashboard">
+    		<div class="side-bar-light">
+      			<div class="illustration">
+        				<div class="logout">
+          					<div class="picture">
+            						<div class="picture-child">
+            						</div>
+
+
+          					</div>
+          					<div class="text">
+            						<div class="easin-arafat">Easin Arafat</div>
+            						<div class="free-account">Free Account</div>
+          					</div>
+
+
+        				</div>
+        				<div class="illustration1">
+          					<div class="object">
+            						<div class="object">
+
+
+              							<div class="object-child">
+              							</div>
+              							<div class="object1">
+              							</div>
+            						</div>
+
+          					</div>
+
+
+        				</div>
+      			</div>
+      			<div class="menu">
+        				<div class="dashboard1">
+          					<div class="dashboard2">Dashboard</div>
+          					<img class="iconlyboldcategory" alt="" src="Iconly/Bold/Category.png">
+
+          					<div class="dashboard-child">
+          					</div>
+        				</div>
+        				<div class="analytics">
+          					<div class="analytics1">
+            						<p class="areas">Areas</p>
+          					</div>
+          					<img class="iconlyboldchart" alt="" src="Iconly/Bold/Chart.png">
+
+        				</div>
+        				<div class="invoice">
+          					<div class="analytics1">contacts</div>
+          					<img class="iconlyboldticket" alt="" src="Iconly/Bold/Ticket.png">
+
+        				</div>
+        				<div class="analytics">
+          					<div class="analytics1">Call Logs</div>
+          					<img class="iconlyboldchart" alt="" src="Iconly/Bold/Document.png">
+
+        				</div>
+        				<div class="calendar">
+          					<div class="analytics1">Complaint</div>
+          					<img class="iconlyboldcalendar" alt="" src="Iconly/Bold/Calendar.png">
+
+        				</div>
+        				<div class="messages">
+          					<div class="analytics1">Initiate Call</div>
+          					<div class="rectangle-parent">
+            						<div class="frame-child">
+            						</div>
+            						<div class="div">49</div>
+          					</div>
+          					<img class="iconlyboldactivity" alt="" src="Iconly/Bold/Activity.png">
+
+        				</div>
+      			</div>
+      			<div class="logo">
+        				<img class="logo-child" alt="" src="{{ url_for('static', filename='/asstes/AquaFixPoint.png') }}">
+
+
+      			</div>
+    		</div>
+    		<div class="container mt-5">
+
+
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="card text-white bg-primary mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Areas</h5>
+                                <p class="card-text">{{ areas_count }}</p>
+                                <a href="{{ url_for('manage_areas') }}" class="btn btn-light">Manage Areas</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-success mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Contacts</h5>
+                                <p class="card-text">{{ contacts_count }}</p>
+                                <a href="{{ url_for('manage_contacts') }}" class="btn btn-light">Manage Contacts</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-info mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Call Logs</h5>
+                                <p class="card-text">{{ call_logs_count }}</p>
+                                <a href="{{ url_for('call_logs') }}" class="btn btn-light">View Call Logs</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="card text-white bg-warning mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Scripts</h5>
+                                <p class="card-text">{{ scripts_count }}</p>
+                                <a href="{{ url_for('manage_scripts') }}" class="btn btn-light">Manage Scripts</a>
+                            </div>
+                        </div>
+                    </div>
+
+                        <div class="card text-white bg-danger mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Initiate Call</h5>
+                                <p class="card-text">Initiate a call to residents in an area</p>
+                                <a href="{{ url_for('initiate_call') }}" class="btn btn-light">Initiate Call</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <a href="{{ url_for('logout') }}" class="btn btn-danger">Logout</a>
+                    </div>
+                </div>
+            </div>
+            <div class="top-analytics-card">
+      			<div class="sales-products">
+        				<div class="bg">
+        				</div>
+        				<div class="text1">
+          					<b class="easin-arafat">190+</b>
+          					<div class="complaint-solve">Complaint </div>
+        				</div>
+        				<div class="icon-buttons-dark">
+          					<img class="ic-sales-icon" alt="" src="{{ url_for('static', filename='/asstes/Complaint.png') }}">
+
+        				</div>
+      			</div>
+      			<div class="stock-products">
+        				<div class="text2">
+          					<div class="bg1">
+          					</div>
+          					<b class="b1">20+</b>
+          					<div class="contacts1">contacts</div>
+        				</div>
+        				<div class="icon-buttons-dark1">
+          					<img class="ic-sales-icon" alt="" src="{{ url_for('static', filename='/asstes/contacts.png') }}">
+
+        				</div>
+      			</div>
+      			<div class="save-products">
+        				<div class="bg">
+        				</div>
+        				<div class="text3">
+          					<b class="easin-arafat">178+</b>
+          					<div class="area">Area</div>
+        				</div>
+        				<div class="icon-buttons-dark2">
+          					<img class="ic-heart-full-icon" alt="" src="{{ url_for('static', filename='/asstes/Area.png') }}">
+
+        				</div>
+      			</div>
+      			<div class="job-application">
+        				<div class="bg1">
+        				</div>
+        				<div class="text4">
+          					<b class="easin-arafat">12+</b>
+          					<div class="complaint-solve">Complaint solve</div>
+        				</div>
+        				<div class="icon-buttons-dark2">
+          					<img class="ic-sales-icon" alt="" src="{{ url_for('static', filename='/asstes/Complaint.png') }}">
+
+        				</div>
+      			</div>
+    		</div>
+
+
+    		<b class="dashboard3">Dashboard</b>
+  	</div>
+
+
+
+
+</body>
+</html>

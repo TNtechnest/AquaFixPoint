@@ -1,0 +1,509 @@
+.bg {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-image: url("r.jpg");
+    background-color: #ffffff;
+    width: 276px;
+    height: 116px;
+}
+.b {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.complaint {
+    position: absolute;
+    top: 29px;
+    left: 0px;
+    font-size: 14px;
+    color: #788b9a;
+}
+.text {
+    position: absolute;
+    top: 33px;
+    left: 112px;
+    width: 68px;
+    height: 47px;
+}
+.ic-sales-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+    object-fit: cover;
+}
+.icon-buttons-dark {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 138px;
+    background-color: rgba(255, 105, 180, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+}
+.sales-products {
+    position: absolute;
+    top: 0px;
+    left: 613px;
+    width: 276px;
+    height: 116px;
+}
+.bg1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 277px;
+    height: 116px;
+}
+.b1 {
+    position: absolute;
+    top: 33px;
+    left: 111px;
+}
+.contacts {
+    position: absolute;
+    top: 65px;
+    left: 102px;
+    font-size: 17px;
+    color: #788b9a;
+}
+.text1 {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 277px;
+    height: 116px;
+}
+.icon-buttons-dark1 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 138px;
+    background-color: rgba(47, 229, 167, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+}
+.stock-products {
+    position: absolute;
+    top: 0px;
+    left: 306px;
+    width: 277px;
+    height: 116px;
+}
+.area {
+    position: absolute;
+    top: 31px;
+    left: 0px;
+    font-size: 21px;
+    color: #788b9a;
+}
+.text2 {
+    position: absolute;
+    top: 33px;
+    left: 111px;
+    width: 47px;
+    height: 58px;
+}
+.ic-heart-full-icon {
+    width: 24px;
+    position: relative;
+    height: 24px;
+}
+.icon-buttons-dark2 {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 138px;
+    background-color: rgba(96, 92, 255, 0.3);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px;
+}
+.save-products {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 276px;
+    height: 116px;
+}
+.text3 {
+    position: absolute;
+    top: 33px;
+    left: 111px;
+    width: 105px;
+    height: 47px;
+}
+.job-application {
+    position: absolute;
+    top: 0px;
+    left: 919px;
+    width: 277px;
+    height: 116px;
+}
+.top-analytics-card {
+    position: absolute;
+    top: 106px;
+    left: 140px;
+    width: 1196px;
+    height: 116px;
+}
+.dashboard {
+    position: absolute;
+    top: 35px;
+    left: 140px;
+    font-size: 24px;
+}
+.bg4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 10px;
+    background-color: #fff;
+}
+.profile-photo-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 12px;
+    background-color: #788b9a;
+}
+.profile-photo-inner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 12px;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.profile-photo {
+    position: absolute;
+    height: 53.46%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 46.54%;
+    left: 0%;
+}
+.logout-icon {
+    position: absolute;
+    height: 20.74%;
+    width: 38.44%;
+    top: 79.24%;
+    right: 34.89%;
+    bottom: 0.02%;
+    left: 26.67%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.4;
+}
+.log-out {
+    position: absolute;
+    height: 9.96%;
+    width: 70.31%;
+    top: 90.03%;
+    right: 0%;
+    bottom: 0%;
+    left: 29.69%;
+}
+.settings-icon {
+    position: absolute;
+    height: 2.98%;
+    width: 37.5%;
+    top: 48.37%;
+    right: 18.75%;
+    bottom: 48.66%;
+    left: 43.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.notification-icon {
+    position: absolute;
+    height: 2.98%;
+    width: 37.5%;
+    top: 41.67%;
+    right: 18.75%;
+    bottom: 55.35%;
+    left: 43.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.messages-icon {    
+    position: absolute;
+    height: 2.48%;
+    width: 31.25%;
+    top: 35.22%;
+    right: 21.88%;
+    bottom: 62.3%;
+    left: 46.88%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.calendar-icon {
+    position: absolute;
+    height: 2.98%;
+    width: 37.5%;
+    top: 28.27%;
+    right: 18.75%;
+    bottom: 68.75%;
+    left: 43.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.schedule-icon {
+    position: absolute;
+    height: 2.98%;
+    width: 37.5%;
+    top: 21.58%;
+    right: 18.75%;
+    bottom: 75.44%;
+    left: 43.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.invoice-icon {
+    position: absolute;
+    height: 2.98%;
+    width: 37.5%;
+    top: 14.88%;
+    right: 18.75%;
+    bottom: 82.14%;
+    left: 43.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.analytics-icon {
+    position: absolute;
+    height: 2.98%;
+    width: 37.5%;
+    top: 8.18%;
+    right: 18.75%;
+    bottom: 88.84%;
+    left: 43.75%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.dashboard-icon {
+    position: absolute;
+    height: 5.95%;
+    width: 82.81%;
+    top: 0%;
+    right: 17.19%;
+    bottom: 94.05%;
+    left: 0%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: contain;
+}
+.menu-name {
+    position: absolute;
+    height: 81.7%;
+    width: 80%;
+    top: 15.2%;
+    right: 20%;
+    bottom: 3.1%;
+    left: 0%;
+}
+.subtract-icon {
+    position: relative;
+    width: 0px;
+    height: 0px;
+}
+.aqua-fix {
+    margin: 0;
+}
+.logo-and-company {
+    position: relative;
+    width: 71px;
+    height: 46px;
+}
+.frame-child {
+    position: absolute;
+    top: -11px;
+    left: -15px;
+    width: 92px;
+    height: 58px;
+}
+.logo-and-company-parent {
+    position: absolute;
+    height: 6.13%;
+    width: 77.5%;
+    top: 3.02%;
+    right: 11.25%;
+    bottom: 90.85%;
+    left: 11.25%;
+}
+.side-bar-light-small {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 80px;
+    height: 995px;
+    text-align: center;
+    font-size: 18px;
+    color: #3a36db;
+}
+.group-child {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0%;
+    right: 0%;
+    bottom: 0%;
+    left: 0%;
+    border-radius: 7.21px;
+    background-color: #fff;
+}
+.group-item {
+    position: absolute;
+    top: calc(50% - 19.15px);
+    left: calc(50% - 122.85px);
+    border-radius: 39.9px;
+    background-color: #2a4dbd;
+    width: 245.7px;
+    height: 38.3px;
+}
+.login {
+    position: absolute;
+    top: calc(50% - 7.45px);
+    left: calc(50% - 72.19px);
+    text-transform: uppercase;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 144.4px;
+    height: 14.4px;
+}
+.rectangle-group {
+    position: absolute;
+    top: calc(50% + 100.24px);
+    left: calc(50% - 113.1px);
+    width: 245.7px;
+    height: 38.3px;
+    text-align: center;
+    font-size: 12.69px;
+    color: #fff;
+    font-family: Roboto;
+}
+.group-inner input{
+    position: absolute;
+    height: 11.66%;
+    width: 84.54%;
+    top: 34.44%;
+    right: 7.8%;
+    bottom: 53.9%;
+    left: 7.66%;
+    border-radius: 31.25px;
+    background-color: #f5f5f5;
+}
+.rectangle-div input {
+    position: absolute;
+    height: 11.66%;
+    width: 84.54%;
+    top: 56.9%;
+    right: 7.8%;
+    bottom: 31.44%;
+    left: 7.66%;
+    border-radius: 40.86px;
+    background-color: #f5f5f5;
+}
+.rectangle-div input::placeholder{
+    color: #000000;
+}
+.email {
+    position: absolute;
+    top: calc(50% - 90.35px);
+    left: calc(50% - 128.44px);
+    display: flex;
+    align-items: flex-end;
+    width: 74.5px;
+    height: 21.8px;
+}
+.login1 {
+    position: absolute;
+    top: calc(50% - 170px);
+    left: calc(50% - 135.45px);
+    font-size: 41.31px;
+    display: flex;
+    align-items: flex-end;
+    width: 133px;
+    height: 39px;
+}
+.password {
+    position: absolute;
+    top: calc(50% - 3.21px);
+    left: calc(50% - 128.44px);
+    display: flex;
+    align-items: flex-end;
+    width: 81.6px;
+    height: 21.8px;
+}
+.rectangle-parent {
+    position: absolute;
+    height: 36.52%;
+    width: 22.62%;
+    top: 39.36%;
+    right: 36.67%;
+    bottom: 24.12%;
+    left: 40.71%;
+    font-size: 14.31px;
+    color: #000;
+    font-family: Raleway;
+}
+.dashboard-navigation {
+    width: 100%;
+    position: relative;
+    height: 1024px;
+    overflow: hidden;
+    background-image: url('r.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 22px;
+    color: #06152b;
+    font-family: 'DM Sans';
+}
+

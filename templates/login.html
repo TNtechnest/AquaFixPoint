@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+</head>
+<body>
+  	<div class="dashboard-navigation">
+    		<div class="top-analytics-card">
+      			<div class="sales-products">
+        				<div class="bg">
+        				</div>
+        				<div class="text">
+          					<b class="b">190+</b>
+          					<div class="complaint">Complaint </div>
+        				</div>
+        				<div class="icon-buttons-dark">
+          					<img class="ic-sales-icon" alt="" src="{{ url_for('static', filename='/asstes/Bag.png') }}">
+
+        				</div>
+      			</div>
+      			<div class="stock-products">
+        				<div class="text1">
+          					<div class="bg1">
+          					</div>
+          					<b class="b1">20+</b>
+          					<div class="contacts">contacts</div>
+        				</div>
+        				<div class="icon-buttons-dark1">
+          					<img class="ic-sales-icon" alt="" src="{{ url_for('static', filename='/asstes/contacts.png') }}">
+
+        				</div>
+      			</div>
+      			<div class="save-products">
+        				<div class="bg">
+        				</div>
+        				<div class="text2">
+          					<b class="b">178+</b>
+          					<div class="area">Area</div>
+        				</div>
+        				<div class="icon-buttons-dark2">
+          					<img class="ic-heart-full-icon" alt="" src="{{ url_for('static', filename='/asstes/Area.png') }}">
+
+        				</div>
+      			</div>
+      			<div class="job-application">
+        				<div class="bg1">
+        				</div>
+        				<div class="text3">
+          					<b class="b">12+</b>
+          					<div class="complaint">Complaint solve</div>
+        				</div>
+        				<div class="icon-buttons-dark2">
+          					<img class="ic-sales-icon" alt="" src="{{ url_for('static', filename='/asstes/Complaint.png') }}">
+
+        				</div>
+      			</div>
+    		</div>
+    		<b class="dashboard">Dashboard</b>
+    		<div class="side-bar-light-small">
+      			<div class="bg4">
+      			</div>
+      			<div class="menu-name">
+        				<div class="log-out">
+          					<div class="profile-photo">
+            						<div class="profile-photo-child">
+            						</div>
+            						<div class="profile-photo-child">
+            						</div>
+            						<img class="profile-photo-inner" alt="" src="Rectangle 115.png">
+
+          					</div>
+          					<img class="logout-icon" alt="" src="Logout.png">
+
+        				</div>
+
+
+        				<img class="messages-icon" alt="" src="{{ url_for('static', filename='/asstes/Messages.png') }}">
+
+        				<img class="calendar-icon" alt="" src="{{ url_for('static', filename='/asstes/Calendar.png') }}">
+
+        				<img class="schedule-icon" alt="" src="{{ url_for('static', filename='/asstes/Schedule.png') }}">
+
+        				<img class="invoice-icon" alt="" src="{{ url_for('static', filename='/asstes/Invoice.png') }}">
+
+        				<img class="analytics-icon" alt="" src= "{{ url_for('static', filename='/asstes/Analytics.png') }}">
+
+        				<img class="dashboard-icon" alt="" src="{{ url_for('static', filename='/asstes/dashboard-icon.png') }}">
+
+      			</div>
+      			<div class="logo-and-company-parent">
+        				<div class="logo-and-company">
+          					<img class="subtract-icon" alt="" src="{{ url_for('static', filename='/asstes/AquaFixPoint.png') }}">
+
+
+        				</div>
+        				<img class="frame-child" alt="" src="{{ url_for('static', filename='/asstes/AquaFixPoint.png') }}">
+
+      			</div>
+    		</div>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Login</h1>
+        <form method="POST" action="{{ url_for('login') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                <label for="email">Email</label>
+             <input class="form-control" id="email" name="email" placeholder="Enter email" required="" type="text" value="">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+               <input class="form-control" id="password" name="password" placeholder="Enter password" required="" type="password" value="">
+            </div>
+            <div class="form-group">
+                <label for="user_type">User Type</label>
+                {{ form.user_type(class="form-control") }}
+            </div>
+            <button type="submit" class="btn btn-primary">Login</button>
+        </form>
+        {% if form.errors %}
+            <div class="alert alert-danger mt-3">
+                {{ form.errors }}
+            </div>
+        {% endif %}
+    </div>
+</body>
+</html>

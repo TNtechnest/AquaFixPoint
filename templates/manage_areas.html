@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Areas</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index3.css') }}">
+</head>
+<body>
+  	<div class="areas">
+    		<div class="side-bar-light">
+      			<div class="illustration">
+        				<div class="logout">
+          					<div class="picture">
+            						<div class="picture-child">
+            						</div>
+            						<img class="picture-item" alt="" src="r.jpg">
+
+          					</div>
+          					<div class="text">
+            						<div class="easin-arafat">Admin</div>
+            						<div class="free-account">Free Account</div>
+          					</div>
+          					<img class="icon" alt="" src="Icon.png">
+
+        				</div>
+      			</div>
+      			<div class="menu">
+        				<div class="dashboard" id="dashboardContainer">
+          					<div class="dashboard1">Dashboard</div>
+          					<img class="iconlyboldcategory" alt="" src="Iconly/Bold/Category.png">
+
+        				</div>
+        				<div class="analytics">
+          					<div class="analytics1">
+            						<p class="aqua-fix">Areas</p>
+          					</div>
+          					<img class="iconlyboldchart" alt="" src="Iconly/Bold/Chart.png">
+
+          					<div class="analytics-child">
+          					</div>
+        				</div>
+        				<div class="invoice" id="invoiceContainer">
+          					<div class="dashboard1">contacts</div>
+          					<img class="iconlyboldticket" alt="" src="Iconly/Bold/Ticket.png">
+
+        				</div>
+        				<div class="schedule" id="scheduleContainer">
+          					<div class="dashboard1">Call Logs</div>
+          					<img class="iconlybolddocument" alt="" src="Iconly/Bold/Document.png">
+
+        				</div>
+        				<div class="calendar" id="calendarContainer">
+          					<div class="dashboard1">Complaint</div>
+          					<img class="iconlyboldcalendar" alt="" src="Iconly/Bold/Calendar.png">
+
+        				</div>
+        				<div class="messages">
+          					<div class="dashboard1">Initiate Call</div>
+          					<div class="rectangle-parent">
+            						<div class="frame-child">
+            						</div>
+            						<div class="div">49</div>
+          					</div>
+          					<img class="iconlyboldactivity" alt="" src="Iconly/Bold/Activity.png">
+
+        				</div>
+      			</div>
+      			<div class="logo">
+        				<img class="logo-child" alt="" src="Frame 40.svg">
+
+        				<b class="wons">
+          					<p class="aqua-fix">Aqua fix</p>
+          					<p class="aqua-fix">point</p>
+        				</b>
+      			</div>
+    		</div>
+ <div class="container mt-5">
+        <h1 class="mb-4">Manage Areas</h1>
+
+        <!-- Flash messages -->
+        {% with messages = get_flashed_messages(with_categories=True) %}
+            {% if messages %}
+                <div class="alert alert-dismissible fade show mt-3" role="alert">
+                    {% for category, message in messages %}
+                        <div class="alert alert-{{ category }} alert-dismissible fade show" role="alert">
+                            {{ message }}
+                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                    {% endfor %}
+                </div>
+            {% endif %}
+        {% endwith %}
+
+        <form method="POST" action="{{ url_for('manage_areas') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.name.label(class="form-control-label") }}
+                {{ form.name(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+
+        <h2 class="mt-5">Existing Areas</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for area in areas %}
+                <tr>
+                    <td>{{ area.id }}</td>
+                    <td>{{ area.name }}</td>
+                    <td>
+                        <form method="POST" action="{{ url_for('delete_area', area_id=area.id) }}" style="display:inline;">
+                            <button type="submit" class="btn btn-danger btn-sm">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        <div class="pagination-container">
+            {{ pagination.links }}
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Manage Contacts</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index4.css') }}">
+</head>
+<body>
+<div class="contacts">
+    		<b class="contacts1">Contacts</b>
+    		<div class="side-bar-light">
+      			<div class="illustration">
+        				<div class="logout">
+          					<div class="picture">
+            						<div class="picture-child">
+            						</div>
+            						<img class="picture-item" alt="" src="Rectangle 115.png">
+
+          					</div>
+          					<div class="text">
+            						<div class="easin-arafat">Admin</div>
+            						<div class="free-account">Free Account</div>
+          					</div>
+          					<img class="icon" alt="" src="Icon.png">
+
+        				</div>
+      			</div>
+      			<div class="menu">
+        				<div class="dashboard" id="dashboardContainer">
+          					<div class="dashboard1">Dashboard</div>
+          					<img class="iconlyboldcategory" alt="" src="Iconly/Bold/Category.png">
+
+        				</div>
+        				<div class="analytics" id="analyticsContainer">
+          					<div class="dashboard1">
+            						<p class="areas">Areas</p>
+          					</div>
+          					<img class="iconlyboldchart" alt="" src="Iconly/Bold/Chart.png">
+
+        				</div>
+        				<div class="invoice">
+          					<div class="invoice1">contacts</div>
+          					<img class="iconlyboldticket" alt="" src="Iconly/Bold/Ticket.png">
+
+          					<div class="invoice-child">
+          					</div>
+        				</div>
+        				<div class="analytics" id="scheduleContainer">
+          					<div class="dashboard1">Call Logs</div>
+          					<img class="iconlyboldchart" alt="" src="Iconly/Bold/Document.png">
+
+        				</div>
+        				<div class="calendar" id="calendarContainer">
+          					<div class="dashboard1">complaint </div>
+          					<img class="iconlyboldcalendar" alt="" src="Iconly/Bold/Calendar.png">
+
+        				</div>
+        				<div class="messages">
+          					<div class="dashboard1">Initiate Call</div>
+          					<div class="rectangle-parent">
+            						<div class="frame-child">
+            						</div>
+            						<div class="div">49</div>
+          					</div>
+          					<img class="iconlyboldactivity" alt="" src="Iconly/Bold/Activity.png">
+
+        				</div>
+      			</div>
+      			<div class="logo">
+        				<img class="logo-child" alt="" src="Frame 40.svg">
+
+        				<b class="wons">
+          					<p class="areas">Aqua fix</p>
+          					<p class="areas">point</p>
+        				</b>
+      			</div>
+    		</div>
+
+    <div class="container mt-5">
+        <h1 class="mb-4">Manage Contacts</h1>
+        <form method="POST" action="{{ url_for('manage_contacts') }}">
+            {{ form.hidden_tag() }}
+            <div class="form-group">
+                {{ form.name.label(class="form-control-label") }}
+                {{ form.name(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.phone_number.label(class="form-control-label") }}
+                {{ form.phone_number(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.area_id.label(class="form-control-label") }}
+                {{ form.area_id(class="form-control") }}
+            </div>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-primary") }}
+            </div>
+        </form>
+
+        <h2 class="mt-5">Existing Contacts</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Phone Number</th>
+                    <th>Area</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for contact in contacts %}
+                <tr>
+                    <td>{{ contact.id }}</td>
+                    <td>{{ contact.name }}</td>
+                    <td>{{ contact.phone_number }}</td>
+                    <td>{{ contact.area.name }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>

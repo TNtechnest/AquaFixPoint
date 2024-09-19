@@ -1,0 +1,573 @@
+.contacts1 {
+    position: absolute;
+    top: 35px;
+    left: 248px;
+    font-size: 25.63px;
+}
+.picture-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    background-color: #fff;
+    width: 45px;
+    height: 43px;
+}
+.picture-item {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 12px;
+    width: 45px;
+    height: 43px;
+    object-fit: cover;
+}
+.picture {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 45px;
+    height: 43px;
+}
+.easin-arafat {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+.free-account {
+    position: absolute;
+    top: 17px;
+    left: 0px;
+    color: #788b9a;
+}
+.text {
+    position: absolute;
+    top: 6px;
+    left: 55px;
+    width: 75px;
+    height: 33px;
+}
+.icon {
+    position: absolute;
+    top: 12.67px;
+    left: 149.67px;
+    width: 17.3px;
+    height: 16.7px;
+    object-fit: cover;
+}
+.logout {
+    position: absolute;
+    top: 225px;
+    left: 0px;
+    width: 167px;
+    height: 43px;
+}
+.illustration {
+    position: absolute;
+    bottom: 30px;
+    left: 25px;
+    width: 168px;
+    height: 268px;
+}
+.dashboard1 {
+    position: absolute;
+    top: 13px;
+    left: 66px;
+    font-weight: 500;
+    opacity: 0.5;
+}
+.iconlyboldcategory {
+    position: absolute;
+    height: 50%;
+    width: 16.11%;
+    top: 25%;
+    right: 65.1%;
+    bottom: 25%;
+    left: 18.79%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.dashboard {
+    width: 149px;
+    position: relative;
+    height: 48px;
+    cursor: pointer;
+}
+.areas {
+    margin: 0;
+}
+.iconlyboldchart {
+    position: absolute;
+    height: 50%;
+    width: 17.52%;
+    top: 25%;
+    right: 62.04%;
+    bottom: 25%;
+    left: 20.44%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.analytics {
+    width: 137px;
+    position: relative;
+    height: 48px;
+    cursor: pointer;
+}
+.invoice1 {
+    position: absolute;
+    top: 13px;
+    left: 66px;
+    font-weight: 500;
+}
+.iconlyboldticket {
+    position: absolute;
+    height: 50%;
+    width: 20%;
+    top: 25%;
+    right: 56.67%;
+    bottom: 25%;
+    left: 23.33%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+}
+.invoice-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 0px 5px 5px 0px;
+    background-color: #788b9a;
+    width: 53px;
+    height: 48px;
+    opacity: 0.2;
+}
+.invoice {
+    width: 120px;
+    position: relative;
+    height: 48px;
+    color: #3a36db;
+}
+.iconlyboldcalendar {
+    position: absolute;
+    height: 50%;
+    width: 17.78%;
+    top: 25%;
+    right: 61.48%;
+    bottom: 25%;
+    left: 20.74%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.calendar {
+    width: 135px;
+    position: relative;
+    height: 48px;
+    cursor: pointer;
+}
+.frame-child {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    border-radius: 7px;
+    background-color: #ff69b4;
+    width: 22px;
+    height: 14px;
+    opacity: 0.1;
+}
+.div {
+    position: absolute;
+    top: 0px;
+    left: 5px;
+}
+.rectangle-parent {
+    position: absolute;
+    top: 18px;
+    left: 171px;
+    width: 22px;
+    height: 14px;
+    font-size: 10px;
+    color: #ff69b4;
+}
+.iconlyboldactivity {
+    position: absolute;
+    height: 50%;
+    width: 12.44%;
+    top: 25%;
+    right: 73.06%;
+    bottom: 25%;
+    left: 14.51%;
+    max-width: 100%;
+    overflow: hidden;
+    max-height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.messages {
+    width: 193px;
+    position: relative;
+    height: 48px;
+}
+.menu {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 6px;
+    font-size: 16px;
+    color: #788b9a;
+}
+.logo-child {
+    width: 42px;
+    position: relative;
+    height: 26px;
+}
+.wons {
+    position: relative;
+}
+.logo {
+    position: absolute;
+    top: 30px;
+    left: 79px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    text-align: center;
+    font-size: 22px;
+    color: #3a36db;
+}
+.side-bar-light {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: #fff;
+    width: 218px;
+    height: 1016px;
+}
+.frame-item {
+    position: absolute;
+    top: -4px;
+    left: -26px;
+    width: 961px;
+    height: 28px;
+    object-fit: cover;
+}
+.id {
+    position: absolute;
+    top: 4px;
+    left: 50px;
+}
+.name {
+    position: absolute;
+    top: 4px;
+    left: 221px;
+}
+.number {
+    position: absolute;
+    top: 2px;
+    left: 405px;
+}
+.area {
+    position: absolute;
+    top: 4px;
+    left: 672px;
+}
+.ic-delete-icon {
+    position: absolute;
+    top: 0px;
+    left: 1093px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.frame-parent {
+    position: absolute;
+    top: 615px;
+    left: 351px;
+    width: 1117px;
+    height: 24px;
+}
+.ic-plus-icon {
+    width: 16px;
+    position: relative;
+    height: 16px;
+}
+.button-light {
+    position: absolute;
+    top: 30px;
+    left: 1245px;
+    border-radius: 50px;
+    background-color: #3a36db;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 40px;
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+}
+.frame-inner {
+    width: 36px;
+    position: relative;
+    height: 36px;
+}
+.group-container {
+    position: absolute;
+    top: 17px;
+    left: 193px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px;
+}
+.ic-email-icon {
+    width: 20px;
+    position: relative;
+    height: 20px;
+    object-fit: cover;
+}
+.ic-email-parent {
+    position: absolute;
+    top: 25px;
+    left: 393px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.ic-calendar-days-parent {
+    position: absolute;
+    top: 26px;
+    left: 677px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.ic-star-icon {
+    position: absolute;
+    top: 25px;
+    left: 1063px;
+    width: 20px;
+    height: 20px;
+}
+.ic-more-hor-icon {
+    position: absolute;
+    top: 25px;
+    left: 1113px;
+    width: 19px;
+    height: 19px;
+    object-fit: cover;
+}
+.invoice-list-light {
+    width: 962px;
+    position: relative;
+    border-radius: 10px;
+    background-color: #fff;
+    height: 70px;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+.invoice-list {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 972px;
+    height: 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 10px;
+}
+.ic-phone-callback-icon {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.ic-phone-callback-icon1 {
+    position: absolute;
+    top: 79px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.ic-phone-callback-icon2 {
+    position: absolute;
+    top: 158px;
+    left: 0px;
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+}
+.group-div {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 24px;
+    height: 182px;
+}
+.group-frame {
+    position: absolute;
+    top: 23px;
+    left: 390px;
+    width: 24px;
+    height: 182px;
+}
+.group-parent {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 972px;
+    height: 230px;
+}
+.contacts-inner {
+    position: absolute;
+    top: 649px;
+    left: 325px;
+    width: 972px;
+    height: 230px;
+    font-size: 14px;
+}
+.atomdescription {
+    position: relative;
+    font-weight: 500;
+}
+.text1 {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.atom {
+    align-self: stretch;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.atomtext-1 {
+    flex: 1;
+    position: relative;
+}
+.atom1 {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+.text2 {
+    align-self: stretch;
+    flex: 1;
+    border-radius: 10px;
+    background-color: #f1f4fa;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 16px 32px;
+    color: #788b9a;
+}
+.textfield-fields-light {
+    position: absolute;
+    top: 87px;
+    left: 30px;
+    width: 349px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+.textfield-fields-light1 {
+    position: absolute;
+    top: 199px;
+    left: 30px;
+    width: 349px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+.textfield-fields-light2 {
+    position: absolute;
+    top: 311px;
+    left: 30px;
+    width: 349px;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 8px;
+}
+.button-light1 {
+    position: absolute;
+    top: 426px;
+    left: 30px;
+    border-radius: 10px;
+    background-color: #3a36db;
+    width: 349px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 40px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 18px;
+    color: #fff;
+}
+.add-customer {
+    position: absolute;
+    top: 69px;
+    left: 600px;
+    background-color: #fff;
+    width: 409px;
+    height: 495px;
+    overflow: hidden;
+    font-size: 16px;
+}
+.contacts {
+    width: 100%;
+    position: relative;
+    height: 1016px;
+    overflow: hidden;
+    background-image: url('https://th.bing.com/th/id/R.880523351308d50d5ccfdc498ba5cf3b?rik=iOHC7OLqJs9MSQ&riu=http%3a%2f%2fwww.pixelstalk.net%2fwp-content%2fuploads%2f2016%2f04%2fWater-backgrounds-free-download.jpg&ehk=JgFtPHSf0mKGDl3XAX1ONxTUPZHvEgxlZfa4sx6hY2E%3d&risl=1&pid=ImgRaw&r=0');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    text-align: left;
+    font-size: 12px;
+    color: #06152b;
+    font-family: 'DM Sans';
+}
+

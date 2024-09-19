@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Call Logs</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">Call Logs</h1>
+
+        <!-- Check if there are any call logs -->
+        {% if call_logs %}
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Timestamp</th>
+                        <th>Status</th>
+                        <th>Area</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Loop through each call log -->
+                    {% for log in call_logs %}
+                        <tr>
+                            <td>{{ log.id }}</td>
+                            <td>{{ log.timestamp.strftime('%Y-%m-%d %H:%M:%S') }}</td>
+                            <td>{{ log.status }}</td>
+                            <td>{{ areas[log.area_id] if log.area_id in areas else 'Unknown' }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        {% else %}
+            <p>No call logs available.</p>
+        {% endif %}
+    </div>
+</body>
+</html>
